@@ -8,14 +8,13 @@ const config = {
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Flaves`,
-    description: `Gatsby starter for personal project.`,
+    title: `Signature Guilmin - Peintagone`,
+    description: `Signature Guilmin - Peintagone`,
     author: `@flaves`,
     siteUrl: config.siteUrl,
   },
   plugins: [
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-emotion`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
@@ -23,6 +22,14 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `r8mwe5qbt97f`,
+        accessToken: process.env.CONTENTFUL_TOKEN,
+        environment: `develop`,
+      },
+    },
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
