@@ -55,7 +55,7 @@ const Guilmin: React.FC<PeintagoneProps> = ({ signature }) => {
                   {signature?.avatar && (
                     <td>
                       <img
-                        src={signature.avatar?.file?.url}
+                        src={`https:${signature.avatar?.file?.url}`}
                         alt={`${signature.firstName} ${signature.lastName}`}
                         width="120"
                         height="120"
