@@ -150,7 +150,7 @@ const Guilmin: React.FC<PeintagoneProps> = ({ signature }) => {
                 <tr>
                   <td>
                     <img
-                      src={logo.file.url}
+                      src={`https:${logo.file.url}`}
                       alt="Logo Guilmin"
                       width="108"
                       height="54"

@@ -160,7 +160,7 @@ const Peintagone: React.FC<PeintagoneProps> = ({ signature }) => {
                 <tr>
                   <td>
                     <img
-                      src={logo.file.url}
+                      src={`https:${logo.file.url}`}
                       alt="Logo Peintagone"
                       width="174"
                       height="31"
@@ -168,7 +168,7 @@ const Peintagone: React.FC<PeintagoneProps> = ({ signature }) => {
                   </td>
                   <td>
                     <img
-                      src={slogan.file.url}
+                      src={`https:${slogan.file.url}`}
                       alt="Logo Peintagone"
                       width="285"
                       height="33"
