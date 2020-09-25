@@ -20,6 +20,7 @@ export const query = graphql`
           peintagoneTitle
           phone
           color
+          noAddress
           avatar {
             file {
               url

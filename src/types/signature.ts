@@ -11,4 +11,5 @@ export interface SignatureType {
     };
   };
   color?: string;
+  noAddress?: boolean;
 }

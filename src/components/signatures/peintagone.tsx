@@ -120,17 +120,19 @@ const Peintagone: React.FC<PeintagoneProps> = ({ signature }) => {
                           M : {signature.phone}
                         </td>
                       </tr>
-                      <tr>
-                        <td
-                          style={{
-                            fontSize: 12,
-                            paddingLeft: 5,
-                            color: `#535D62`,
-                          }}
-                        >
-                          Rue de Gembloux 420, BE-5002 Saint-Servais
-                        </td>
-                      </tr>
+                      {!signature.noAddress && (
+                        <tr>
+                          <td
+                            style={{
+                              fontSize: 12,
+                              paddingLeft: 5,
+                              color: `#535D62`,
+                            }}
+                          >
+                            Rue de Gembloux 420, BE-5002 Saint-Servais
+                          </td>
+                        </tr>
+                      )}
                       <tr>
                         <td style={{ paddingLeft: 5 }}>
                           <a
