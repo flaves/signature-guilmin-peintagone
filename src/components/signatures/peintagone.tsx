@@ -129,7 +129,7 @@ const Peintagone: React.FC<PeintagoneProps> = ({ signature }) => {
                               color: `#535D62`,
                             }}
                           >
-                            Rue de Gembloux 420, BE-5002 Saint-Servais
+                            Rue des Roseurs 18, BE-5300 Andenne
                           </td>
                         </tr>
                       )}
