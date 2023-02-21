@@ -22,6 +22,9 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -40,12 +43,6 @@ module.exports = {
           emitWarning: true,
           failOnError: true,
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: ``,
       },
     },
     {
